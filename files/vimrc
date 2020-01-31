@@ -49,6 +49,7 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-unimpaired'
 Plug 'nanotech/jellybeans.vim'
+Plug 'altercation/vim-colors-solarized'
 Plug 'dyng/ctrlsf.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-projectionist'
@@ -205,8 +206,10 @@ set cmdheight=2
 set signcolumn=yes
 set scrolloff=3
 
-silent! colorscheme jellybeans
-
+" silent! colorscheme jellybeans
+syntax enable
+set background=dark
+colorscheme solarized
 " ================ Persistent Undo ==================
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
