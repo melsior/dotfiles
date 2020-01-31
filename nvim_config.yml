@@ -12,3 +12,7 @@
               dest: $HOME/.config/nvim/init.vim
               state: link
 
+          - file:
+              src: $HOME/dotfiles/files/coc-settings.json
+              dest: $HOME/.config/nvim/coc-settings.json
+              state: link

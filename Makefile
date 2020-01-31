@@ -1,5 +1,5 @@
 arch-prepare:
-	sudo pacman -S ansible tldr
+	sudo pacman -S ansible tldr nodejs npm
 
 nvim-install:
 	ansible-playbook $(PWD)/nvim_install.yml -i inventory -vvv
