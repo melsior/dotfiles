@@ -1,0 +1,10 @@
+---
+
+- hosts: all
+  tasks:
+
+          - file:
+              src: $HOME/dotfiles/files/vimrc
+              dest: $HOME/.config/init.vim
+              state: link
+
