@@ -1,0 +1,13 @@
+---
+
+- hosts: localhost
+  become: yes
+  
+  tasks:
+          - name: install neovim
+            pacman:
+              name: 
+                - neovim
+                - python-pynvim
+              state: present
+              update_cache: yes
