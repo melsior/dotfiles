@@ -4,7 +4,11 @@
   tasks:
 
           - file:
+              path: $HOME/.config/nvim
+              state: directory
+
+          - file:
               src: $HOME/dotfiles/files/vimrc
-              dest: $HOME/.config/init.vim
+              dest: $HOME/.config/nvim/init.vim
               state: link
 
