@@ -469,3 +469,4 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 vmap <leader>y :w! /tmp/.vim/.vbuf<CR>
 nmap <leader>y :.w! /tmp/.vim/.vbuf<CR>
 nmap <leader>p :r /tmp/.vim/.vbuf<CR>
+let g:airline_powerline_fonts = 1
