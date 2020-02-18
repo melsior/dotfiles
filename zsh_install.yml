@@ -1,0 +1,16 @@
+---
+
+- hosts: localhost
+  become: yes
+
+  tasks:
+    - name: install zsh
+      pacman:
+        name:
+          - zsh
+        state: present
+        update_cache: yes
+    - name: install oh-my-zsh
+      shell:
+        cmd: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        chdir: $HOME
