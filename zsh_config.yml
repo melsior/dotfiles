@@ -4,11 +4,8 @@
 
   tasks:
     - name: install oh-my-zsh
-      shell:
-        cmd: sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-        chdir: $HOME
+      aur: name=oh-my-zsh-git use=yay
     - name: install powerlevel10k
-      shell:
-        cmd: git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
-        chdir: $HOME
-
+      aur: name=zsh-theme-powerlevel10k-git use=yay
+    # - name: install font
+      # aur: name=
