@@ -1,0 +1,18 @@
+---
+
+- hosts: localhost
+
+  tasks:
+    - name: install zsh
+      become: yes
+      pacman:
+        name:
+          - zsh
+        state: present
+        update_cache: yes
+
+    - name: change shell environment
+      become: yes
+      user:
+        name: "{{ ansible_user_id }}"
+        shell: /bin/zsh

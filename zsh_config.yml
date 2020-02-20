@@ -1,0 +1,11 @@
+---
+
+- hosts: localhost
+
+  tasks:
+    - name: install oh-my-zsh
+      aur: name=oh-my-zsh-git use=yay
+    - name: install powerlevel10k
+      aur: name=zsh-theme-powerlevel10k-git use=yay
+    # - name: install font
+      # aur: name=
